@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="description" content="🚀Proxy Linux"/><link rel="alternate" href="/default" title="Dizzy" ><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
+<link rel="canonical" href="https://yi0322.github.io/2019/08/09/proxy/"/>
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
+</script>
+
+    <title>🚀Proxy Linux - Dizzy</title>
+  <meta name="generator" content="Hexo 5.2.0"></head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Dizzy</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">Home
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Dizzy</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+            </a>
+        </li>
+      </ul></nav>
+</header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><article class="post">
+    <header class="post-header">
+      <h1 class="post-title">🚀Proxy Linux
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019-08-09
+        </span></div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Terminal"><span class="toc-text">Terminal</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-clash-%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90"><span class="toc-text">使用 clash 二进制 (强烈推荐)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-text">补充</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98"><span class="toc-text">错误问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8clash-in-docker"><span class="toc-text">使用clash in docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-python-ssr-%E6%90%AD%E9%85%8D-ssr-helper-ssr-%E5%B7%B2%E5%BA%9F"><span class="toc-text">使用 python-ssr 搭配 ssr-helper ( ssr 已废 )</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GUI"><span class="toc-text">GUI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8electron-ssr-ssr-%E5%B7%B2%E5%BA%9F"><span class="toc-text">使用electron-ssr ( ssr 已废 )</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-text">让终端走代理的几种方法</span></a></li></ol>
+    </div>
+  </div><div class="post-content"><p>与时俱进 🤫</p>
+<a id="more"></a>
+
+<h2 id="Terminal"><a href="#Terminal" class="headerlink" title="Terminal"></a>Terminal</h2><h3 id="使用-clash-二进制-强烈推荐"><a href="#使用-clash-二进制-强烈推荐" class="headerlink" title="使用 clash 二进制 (强烈推荐)"></a>使用 clash 二进制 (强烈推荐)</h3><p><a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/releases">下载地址</a></p>
+<ol>
+<li><p>下载解压后拷贝到 <code>/usr/local/bin</code> </p>
+</li>
+<li><p>对文件使用 <code>sudo chmod +x ./clash-xxx</code> 授予权限</p>
+</li>
+<li><p>然后 <code>./clash-xxx</code> 使用，它会自动下载一个几M的文件 <code>Country.mmdb</code> ，<strong>有的时候</strong>下载可能比较慢, 耐心等待，提示下一串字符时说明下载完成. 也可以直接下载这个<a target="_blank" rel="noopener" href="https://www.yuque.com/attachments/yuque/0/2020/txt/182729/1593505250098-72dd0aff-9453-47e8-9a2b-45615cf4542a.txt?_lake_card=%7B%22status%22:%22done%22,%22source%22:%22transfer%22,%22src%22:%22https://www.yuque.com/attachments/yuque/0/2020/txt/182729/1593505250098-72dd0aff-9453-47e8-9a2b-45615cf4542a.txt%22,%22name%22:%22Country.mmdb.txt%22,%22ext%22:%22txt%22,%22size%22:3820017,%22id%22:%22v3n3U%22,%22card%22:%22file%22%7D">Country.mmdb.txt</a> 拷贝到<code>~/.config/clash</code> 文件夹</p>
+</li>
+<li><p>最后可以在 <code>~/.config/clash</code> 文件夹中看到两个文件, 其中将 <code>config.yaml</code> 替换成自己的配置(一般你的服务商会提供，如果没有提供 clash 配置文件，参考下面的<strong>补充3</strong>进行转换), 然后再运行 <code>./clash-xxx</code> 即可</p>
+</li>
+</ol>
+<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a><strong>补充</strong></h4><ol>
+<li><p><a target="_blank" rel="noopener" href="http://clash.razord.top/">访问控制面板</a></p>
+</li>
+<li><p>后台运行 <code>nohup clash-xxx</code>  这样即使关闭终端也会后台运行</p>
+</li>
+<li><p>结合<a target="_blank" rel="noopener" href="https://github.com/tindy2013/subconverter">subconverter-规则转换器</a>使用</p>
+</li>
+</ol>
+<h4 id="错误问题"><a href="#错误问题" class="headerlink" title="错误问题"></a><strong>错误问题</strong></h4><p>有的时候你服务商提供的配置文件比较旧，这时候可以使用老版本的 clash，也可以参考<strong>补充3</strong>进行转换</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/attachments/yuque/0/2020/gz/182729/1593505192756-8589dfbf-3777-45e3-92bc-3882ea4be2f2.gz?_lake_card=%7B%22status%22:%22done%22,%22source%22:%22transfer%22,%22src%22:%22https://www.yuque.com/attachments/yuque/0/2020/gz/182729/1593505192756-8589dfbf-3777-45e3-92bc-3882ea4be2f2.gz%22,%22name%22:%22clash-linux-amd64-v0.20.0.gz%22,%22ext%22:%22gz%22,%22size%22:3608351,%22id%22:%22wEw7J%22,%22card%22:%22file%22%7D">clash-linux-amd64-v0.20.0.gz</a></p>
+<h3 id="使用clash-in-docker"><a href="#使用clash-in-docker" class="headerlink" title="使用clash in docker"></a>使用clash in docker</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/CodeAndMoe/p/clash-in-docker-linux.html">clash in docker 使用教程(Linux)</a></p>
+<h3 id="使用-python-ssr-搭配-ssr-helper-ssr-已废"><a href="#使用-python-ssr-搭配-ssr-helper-ssr-已废" class="headerlink" title="使用 python-ssr 搭配 ssr-helper ( ssr 已废 )"></a>使用 <a target="_blank" rel="noopener" href="https://github.com/shadowsocksr-backup/shadowsocksr/tree/manyuser">python-ssr</a> 搭配 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/ssr-helper">ssr-helper</a> ( ssr 已废 )</h3><h2 id="GUI"><a href="#GUI" class="headerlink" title="GUI"></a>GUI</h2><h3 id="使用electron-ssr-ssr-已废"><a href="#使用electron-ssr-ssr-已废" class="headerlink" title="使用electron-ssr ( ssr 已废 )"></a>使用electron-ssr ( ssr 已废 )</h3><p>看文档进行设置<br>原作者已经删除了仓库,现为备份<br><a target="_blank" rel="noopener" href="https://github.com/qingshuisiyuan/electron-ssr-backup">electron-ssr</a><br><a target="_blank" rel="noopener" href="https://baorongquan.github.io/2017/09/09/linux-ssr-use/">linux 使用ssr上网</a></p>
+<h2 id="让终端走代理的几种方法"><a href="#让终端走代理的几种方法" class="headerlink" title="让终端走代理的几种方法"></a>让终端走代理的几种方法</h2><p>原文网址: <a target="_blank" rel="noopener" href="https://blog.fazero.me/2015/09/15/%E8%AE%A9%E7%BB%88%E7%AB%AF%E8%B5%B0%E4%BB%A3%E7%90%86%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/">让终端走代理的几种方法</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">alias</span> setproxy=<span class="string">&quot;export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7891&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> unsetproxy=<span class="string">&quot;unset https_proxy;unset http_proxy;unset all_proxy&quot;</span></span><br></pre></td></tr></table></figure>
+      </div>
+      <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="https://yi0322.github.io">Justice</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="https://yi0322.github.io/2019/08/09/proxy/">https://yi0322.github.io/2019/08/09/proxy/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+      <footer class="post-footer">
+        
+        <nav class="post-nav"><a class="prev" href="/2019/08/16/common-mirrors/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">💿常用镜像</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    </nav></footer>
+    </article></div><div class="comments" id="comments"></div></div>
+      </main>
+
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:yi04188@pm.me" class="iconfont icon-email" title="email"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">&copy;2015 - 2020<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Justice</span>
+  </span>
+</div>
+</footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
+</html>
