@@ -13,15 +13,15 @@ tags:
 这两条配置很重要，每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录
 
 ```shell
-git config --global user.name "yi0322"
-git config --global user.email yi04188@gmail.com
+git config --global user.name "你的用户名"
+git config --global user.email 你的邮箱
 ```
 
 <a name="d4b58067"></a>
 ## 生成 ssh-key
 
 ```shell
-ssh-keygen -t rsa -C "yi04188@gmail.com"
+ssh-keygen -t rsa -C "你的邮箱"
 ```
 
 <a name="e58528fd"></a>
